@@ -55,10 +55,7 @@
                                    // $display = 'none'; 
                                     if( $product->get_price_html()) : ?>
                                         <span class="info__currentPrice" style="display: <?php echo $display ?>">
-                                            <span>
-                                                <?php echo $product->get_price_html(); ?>
-                                            <!-- <?// php echo $product->get_regular_price() * $_POST['quantity']; ?> -->
-                                            </span>
+                                            <span></span>
                                         </span>
                                     <?php endif; ?>
                                     <span class="info__salePrice">

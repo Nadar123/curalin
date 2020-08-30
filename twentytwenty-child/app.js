@@ -1,4 +1,4 @@
-
+// SHA256:JS3Ciibx4XsY3XIoCCZ85PRHwcAs/ugs9jG13eL1EcU.
 //scroll
 $(document).on("click", ".scroll-form", function () {
   var id = $(".product"),
@@ -48,6 +48,9 @@ function add_product_sale_to_cart(product_id, quantity){
             if(response.regular_product_price){
                 $('.product-info__currentPrice__price .info__currentPrice')
                 .html(response.regular_product_price);
+            } else{
+                $('.product-info__currentPrice__price .info__currentPrice')
+                .html('');
             }
             if(response.sale_product_price){
                 $('.product-info__currentPrice__price .info__salePrice span')
